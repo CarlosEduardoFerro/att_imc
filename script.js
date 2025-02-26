@@ -10,7 +10,7 @@ const Calcular = () => {
     }
 
     const pesoInvalido = peso <= 10 || peso >= 300;
-    const alturaInvalida = altura < 1.20 || altura > 3;
+    const alturaInvalida = altura < 0.5 || altura > 2.5;
 
     if (pesoInvalido && alturaInvalida) {
         resultado.innerHTML = `<p class="paragrafo">Peso e altura inválidos!</p>`;
